@@ -38,8 +38,8 @@ h2 {
   margin-bottom: 100px;
 }
 .dashboard-text {
-  background-image: url("https://www.themealdb.com/images/media/meals/uuqvwu1504629254.jpg");
-  background-position-y: 50%;
+  background-image: url("asset/food2.jpg");
+  background-position-y: 20%;
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,6 +64,7 @@ h2 {
   border: 2px solid black !important;
   border-top: 0px solid #000 !important;
   color: white !important;
+  margin-top: -1px;
 }
 .btn-dashboard:hover {
   background-color: #f82735 !important;
@@ -82,7 +83,6 @@ h2 {
   padding: 0px !important;
   margin-right: 20px;
   margin-top: 20px !important;
-  border: 1px solid rgb(39, 36, 36) !important;
 }
 #list-kategori {
   height: 40px;

@@ -46,9 +46,9 @@ async function getRandomFood() {
     makananAcak = json_makananAcak.meals;
 
     output += `
-        <div class="card align-items-center border-1 border-dark rounded mb-4" style="width: 20rem;" >
+        <div class="card align-items-center border-0 k rounded mb-4" style="width: 20rem;" >
 
-        <img src="${makananAcak[0]["strMealThumb"]}" style="width: 100%;border-bottom:1px solid black" class="card-img-top" alt="...">
+        <img src="${makananAcak[0]["strMealThumb"]}" style="width: 100%;border-bottom:0px solid black" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">${makananAcak[0]["strMeal"]}</h5>
         </div>
