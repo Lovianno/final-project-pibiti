@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheMeal</title>
+    <link rel="icon" href="https://www.themealdb.com/images/meal-icon.png">
+
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Space Mono" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto Mono" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lexend Deca" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="home">
+      <div class="container-fluid justify-content-between">
+        <a class="navbar-brand"  href="" id="navbrand">
+          <img src="https://www.themealdb.com/images/logo-small.png" alt="" />
+        </a>
+        <button class="navbar-toggler bg-light text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-center pt-1 fs-3">☰</span>
+        </button>
+        <div class="collapse navbar-collapse order-lg-1" id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-auto text-center d-flex" style="width: 100%" id="navmenu">
+            <a class="nav-link px-2 py-2 text-uppercase text-light fw-bold list-nav" href="#home">Home</a>
+            <a class="nav-link px-2 py-2 text-uppercase text-light fw-bold list-nav" href="#recommend">Recommend</a>
+            <a class="nav-link px-2 py-2 text-uppercase text-light fw-bold list-nav" href="#meals">MEAL</a>
+            <!-- <a class="nav-link px-2 py-2 text-uppercase text-light fw-boldfw-bold list-nav" href="#trend">Trending Now</a> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Dashboard -->
+    <section id="" >
+      <div class="container-fluid" id="dashboard">
+        <div class="row justify-content-center" >
+          <div class="dashboard-text col-md-12 d-flex flex-column align-items-center justify-content-center text-center" style="height: 90vh;" >
+            <h2 class="h2 bg-light p-3 rounded" id="db-text"  data-aos="flip-up" data-aos-duration="500">
+            Welcome to THEMEAL
+            </h2>
+            <p class="h6 text-light p-2" id="db-desc"  data-aos="flip-up" data-aos-duration="500">
+              Best Restaurant in Indonesia<br />
+            </p>
+            <a href="#recommend"> <button  data-aos="flip-up" data-aos-duration="500" id="btnTest" class="btn btn-lg btn-dashboard fw-bold" style="width: 100%"> Let's Eat Now!
+            </button></a>
+          </div>
+         
+      </div>
+    </section>
+    <section id="recommend">
+        <div class="container">
+          <h2 data-aos="fade-right" class="text-center mb-4" >Recommended For You!</h2>
+          <div class="row"data-aos="fade-up" id="row-recommend">
+            <div class="col-md-12 d-flex justify-content-between" id="best-food1">
+              <!-- <div id="best-food1" class="card align-items-center border-0" style="width: 20rem;" > -->
+                <!-- <img src="https://www.themealdb.com/images/media/meals/kos9av1699014767.jpg" style="width: 100%;" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nasgor Brengos</h5>
+                </div> -->
+                
+              <!-- </div> -->
+            </div>
+            <div class="container">
+            <div class="row">
+              <div class="cold-md-12 btn-random">
+          <button type="button" class="my-4 btn text-light " style="width: 100%; background-color: #de000e !important;">Find Another</button>
+
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+    </section>
+
+    <hr class="garis">
+
+    <section id="meals">
+      <div class="container" id="section3"  >
+        <h3 class="h3"  data-aos="fade-right">Collection Meals</h3>
+        <h5 class="h6 mt-2"  data-aos="fade-right">There's a lot of meal you can find!</h5>
+        
+        <div class="dropdown"  data-aos="fade-right">
+          <select class="form-select form-select-sm" aria-label="form-select-sm example" id="list-kategori">
+            <option selected>Category</option>
+            <option value="1"></option>
+            
+          </select>
+          <p class="mt-2 mb-0"  data-aos="fade-right"  id="count-food"></p>
+          <!-- <select class="btn btn-outline-dark border-3 btn-sm cbCat" style="width: 16rem" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Choose Category</select>
+          <ul class="dropdown-menu" id="list-kategori" aria-labelledby="dropdownMenuButton1" style="width: 16rem;">
+            <li><a class="dropdown-item" href="#">Mario</a></li>
+          </ul>
+          <option value="">Pilih Kategori</option> -->
+
+        </div>
+
+        <div class="row " id="list-food" data-aos="fade-up">
+          <!-- <div  class="card-food card text-center col-md-3 align-items-center " style="width: 16rem; border-radius: 3%;">
+            <img src="https://www.themealdb.com/images/media/meals/kos9av1699014767.jpg" class="card-img-top" alt="..." style="width: 100%; height: 200px" />
+            <div class="card-body">
+              <h4 class="card-text">Fireball Mario</h4>
+            </div>
+          </div> -->
+          
+        </div>
+      </div>
+      </div>
+    </section>
+
+  
+      <!-- start footer -->
+      <footer class="bg-dark py-5 mt-5">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a class="text-uppercase text-decoration-none brand text-white" href="index.html">TheMeal&trade;</a>
+                    <p class="text-white text-muted mt-3">Welcome to TheMealDB: An open, crowd-sourced database of Recipes from around the world.
+                      We also offer a free recipe API for anyone wanting to use it, with additional features for subscribers. </p>
+                </div>
+
+               
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Notify Us</h5>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            Jl. Kembang Kuning, Surabaya, Indonesia
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="fw-light">
+                            themeal.cs@gmail.com
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            08123456789
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Social Media</h5>
+                    <div>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-lg-3">
+                  <h5 class="fw-light">Created with Luv by Lovianno</h5>
+              </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+  </script> 
+  </body>
+</html>

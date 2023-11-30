@@ -1,0 +1,123 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+}
+.nav-link {
+  text-decoration: none;
+}
+
+nav {
+  background-color: #de000e !important;
+}
+
+h1 {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h2 {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+#navmenu {
+  font-family: "Space Mono", sans-serif;
+}
+
+.list-nav {
+  /* border: 1px solid black; */
+  width: 100%;
+  border-radius: 5px;
+}
+.list-nav:hover {
+  border-bottom: 2px solid white;
+}
+#dashboard {
+  border-bottom: 1px solid black;
+  margin-bottom: 100px;
+}
+.dashboard-text {
+  background-image: url("https://www.themealdb.com/images/media/meals/uuqvwu1504629254.jpg");
+  background-position-y: 50%;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#db-text {
+  border: 2px solid black !important;
+  color: rgb(255, 238, 238);
+  background-color: #de000e !important;
+  margin-bottom: 0px;
+}
+#db-desc {
+  border: 2px solid black !important;
+  margin-top: -1px;
+  border-top: 0px solid #000 !important;
+  color: rgb(255, 238, 238) !important;
+  background-color: #de000e !important;
+  margin-bottom: 0px;
+}
+.btn-dashboard {
+  background-color: #de000e !important;
+  border: 2px solid black !important;
+  border-top: 0px solid #000 !important;
+  color: white !important;
+}
+.btn-dashboard:hover {
+  background-color: #f82735 !important;
+  border: 3px solid #ffffff !important;
+  font-size: 1.5rem;
+}
+.garis {
+  border: 1px solid black !important;
+  background-color: black !important;
+  opacity: 100%;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.card-food {
+  padding: 0px !important;
+  margin-right: 20px;
+  margin-top: 20px !important;
+  border: 1px solid rgb(39, 36, 36) !important;
+}
+#list-kategori {
+  height: 40px;
+  overflow-y: auto;
+  width: 16rem;
+}
+option {
+  overflow-y: scroll;
+}
+
+@media only screen and (max-width: 991px) {
+  #section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center !important;
+  }
+  #list-food {
+    justify-content: center !important;
+  }
+  #best-food1 {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}
+#navbrand {
+  margin-right: 15%;
+}
+#navbrand img {
+  width: 100%;
+}
+@media only screen and (max-width: 443px) {
+  #navbrand {
+    width: 70%;
+    margin-right: 0px !important;
+  }
+}
